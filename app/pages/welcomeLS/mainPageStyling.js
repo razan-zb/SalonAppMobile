@@ -57,6 +57,9 @@ export const InnerContainer = styled.View`
     padding:10px;
     margin-top:20px;
     justify-content: center;
+    border-radius: 10px;
+    border:1px;
+    border: 2px solid #6C400A;
 
 
 

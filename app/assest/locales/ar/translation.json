@@ -1,0 +1,12 @@
+{
+    "welcome": "مرحباً بعودتك",
+    "login": "تسجيل الدخول",
+    "password": "كلمة المرور",
+    "changeLanguage": "تغيير اللغة",
+    "SignUp": "تسجيل حساب",
+    "userName": "اسم المستخدم",
+    "enterYourEmail": "أدخل بريدك الإلكتروني",
+    "enterYourPassword": "أدخل كلمة المرور الخاصة بك",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور"
+  }

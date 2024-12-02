@@ -3,11 +3,32 @@ import React, { useState } from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'; 
 import * as SC from './mainPageStyling';
+import { useTranslation } from 'react-i18next';
+import {  Button } from 'react-native';
+import { I18nManager } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import RNRestart from 'react-native-restart';
 
 const LoginScreen = ({ navigation }) => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = async (lng) => {
+    await AsyncStorage.setItem('language', lng);
+    i18n.changeLanguage(lng);
+
+    const isRTL = lng === 'ar' || lng === 'he';
+    if (I18nManager.isRTL !== isRTL) {
+      I18nManager.forceRTL(isRTL);
+      // Restart app to apply RTL changes
+      setTimeout(() => {
+        RNRestart.Restart();
+      }, 0);
+    }
+
+  };
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -18,7 +39,6 @@ const LoginScreen = ({ navigation }) => {
   };
 
   const handleLoginPress = () => {
-    alert('Login button pressed');
   };
 
   return (
@@ -28,12 +48,12 @@ const LoginScreen = ({ navigation }) => {
         <Icon name="arrow-back" size={30} color="#6C400A" />
       </SC.BackArrow>
 
-      <SC.LogInTitle>Welcome Back</SC.LogInTitle>
+      <SC.LogInTitle>{t('welcome')}</SC.LogInTitle>
       <SC.InnerContainer>
         <View style={{ marginBottom: 20 }}>
-          <SC.LogInLabels>User Name</SC.LogInLabels>
+          <SC.LogInLabels>{t('userName')}</SC.LogInLabels>
           <SC.InputBox
-            placeholder="Enter your email"
+            placeholder={t('enterYourEmail')}
             value={email}
             onChangeText={setEmail}
             keyboardType="email-address"
@@ -41,25 +61,28 @@ const LoginScreen = ({ navigation }) => {
         </View>
 
         <View style={{ marginBottom: 20 }}>
-          <SC.LogInLabels>Password</SC.LogInLabels>
+          <SC.LogInLabels>{t('password')}</SC.LogInLabels>
           <SC.InputBox
-            placeholder="Enter your password"
+            placeholder={t('enterYourPassword')}
             value={password}
             onChangeText={setPassword}
+            keyboardType="password"
             secureTextEntry={!passwordVisible}
           />
         </View>
 
         <TouchableOpacity onPress={togglePasswordVisibility} style={{ flexDirection: 'row', alignItems: 'center' }}>
           <SC.Checkbox checked={passwordVisible} />
-          <SC.ShownPassword>{passwordVisible ? 'Hide Password' : 'Show Password'}</SC.ShownPassword>
+          <SC.ShownPassword>{passwordVisible ? t('hidePassword') : t('showPassword')}</SC.ShownPassword>
         </TouchableOpacity>
       </SC.InnerContainer>
+      <Button title="English" onPress={() => changeLanguage('en')} />
+      <Button title="العربية" onPress={() => changeLanguage('ar')} />
+      <Button title="עברית" onPress={() => changeLanguage('he')} />
 
-      {/* Login Button */}
       <TouchableOpacity onPress={handleLoginPress} style={{ marginTop: 20 }}>
         <SC.LoginButton>
-          <SC.ButtonText>Login</SC.ButtonText>
+          <SC.ButtonText>{t('login')}</SC.ButtonText>
         </SC.LoginButton>
       </TouchableOpacity>
     </SC.LoginContainer>

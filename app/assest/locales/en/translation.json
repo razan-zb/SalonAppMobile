@@ -1,0 +1,12 @@
+{
+    "welcome": "Welcome Back",
+    "login": "Log In",
+    "password": "Password",
+    "changeLanguage": "Change Language",
+    "SignUp": "Sign Up",
+    "userName": "User Name",
+    "enterYourEmail": "Enter your email",
+    "enterYourPassword": "Enter your password",
+    "showPassword": "Show Password",
+    "hidePassword": "Hide Password"
+  }
