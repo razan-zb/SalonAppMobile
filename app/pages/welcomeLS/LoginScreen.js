@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, { useState } from 'react';
 import { TouchableOpacity, View } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons'; 
+import Icon from 'react-native-vector-icons/Ionicons';
 import * as SC from './mainPageStyling';
 import { useTranslation } from 'react-i18next';
 import {  Button } from 'react-native';
@@ -22,7 +22,6 @@ const LoginScreen = ({ navigation }) => {
     const isRTL = lng === 'ar' || lng === 'he';
     if (I18nManager.isRTL !== isRTL) {
       I18nManager.forceRTL(isRTL);
-      // Restart app to apply RTL changes
       setTimeout(() => {
         RNRestart.Restart();
       }, 0);
@@ -80,11 +79,9 @@ const LoginScreen = ({ navigation }) => {
       <Button title="العربية" onPress={() => changeLanguage('ar')} />
       <Button title="עברית" onPress={() => changeLanguage('he')} />
 
-      <TouchableOpacity onPress={handleLoginPress} style={{ marginTop: 20 }}>
-        <SC.LoginButton>
-          <SC.ButtonText>{t('login')}</SC.ButtonText>
-        </SC.LoginButton>
-      </TouchableOpacity>
+      <SC.LoginButton  onPress={() => navigation.navigate('AdminMainPage')}>
+        <SC.ButtonText>{t('login')}</SC.ButtonText>
+      </SC.LoginButton>
     </SC.LoginContainer>
   );
 };
