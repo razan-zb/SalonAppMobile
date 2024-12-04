@@ -22,14 +22,52 @@ export const SmallContainer = styled.View`
 
 //First Section
 export const FirstSectionContainer = styled.View`
-    height: 200px;
-    width: 90%;
-    background-color: #F6C992;
-    justify-content:center;
-    align-items: center;
-    margin-top:10px
+  height: 200px;
+  width: 90%;
+  background-color: #F6C992;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap; 
+  padding: 10px;
+  gap:5px;
+  overflow: hidden;
 
 `;
+
+export const ArrowButton = styled.TouchableOpacity`
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #935B16;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+`;
+
+export const MiniBoxContainer = styled.View`
+    height: 40px;
+    width: 100px;
+    background-color: #E6A556;
+    border-radius: 10px;
+    background-color: ${(props) => props.bgColor || '#E6A556'}; /* Dynamic color */
+
+`;
+
+export const MiniBoxText = styled.Text`
+    text-align:center;
+    color:white;
+    font-weight: bold;
+
+
+
+`;
+
 //Second Section
 export const SecondSectionContainer = styled.View`
     height: 300px;
