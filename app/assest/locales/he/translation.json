@@ -8,5 +8,13 @@
     "enterYourEmail": "הזן את כתובת האימייל שלך",
     "enterYourPassword": "הזן את הסיסמה שלך",
     "showPassword": "הצג סיסמה",
-    "hidePassword": "הסתר סיסמה"
+    "hidePassword": "הסתר סיסמה",
+    "weeklySummary": "סיכום שבועי",
+    "totalClients": "מספר לקוחות",
+    "totalEarnings": "סה״כ רווחים",
+    "currency": "שיקל",
+    "Today's birthdays": "ימי הולדת היום",
+    "noBirthdaysToday": "אין ימי הולדת היום",
+    "clientsNames": "שמות הלקוחות",
+    "Birthdays Today": "ימי הולדת היום"
   }

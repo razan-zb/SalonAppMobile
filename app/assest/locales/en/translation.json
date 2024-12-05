@@ -8,5 +8,13 @@
     "enterYourEmail": "Enter your email",
     "enterYourPassword": "Enter your password",
     "showPassword": "Show Password",
-    "hidePassword": "Hide Password"
+    "hidePassword": "Hide Password",
+    "weeklySummary": "Weekly Summary",
+    "totalClients": "Total Clients",
+    "totalEarnings": "Total Earnings",
+    "currency": "Shekel",
+    "Today's birthdays": "Today's birthdays",
+    "noBirthdaysToday": "No birthdays today",
+    "clientsNames": "Clients' Names",
+    "Birthdays Today": "Birthdays Today"
   }

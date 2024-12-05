@@ -34,6 +34,7 @@ export const FirstSectionContainer = styled.View`
   padding: 10px;
   gap:5px;
   overflow: hidden;
+  border-radius:15px;
 
 `;
 
@@ -72,13 +73,41 @@ export const MiniBoxText = styled.Text`
 export const SecondSectionContainer = styled.View`
     height: 300px;
     width: 90%;
-    background-color: #F6C992;
     justify-content:center;
     align-items: center;
-    margin-top:10px
+    margin-top:10px;
+
 
 
 `;
+
+export const Container1 = styled.View`
+    height: 80px;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+
+`;
+
+export const Title = styled.Text`
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #5a3223;
+  font-family: cursive;
+
+`;
+
+
+export const StatText = styled.Text`
+  font-size: 20px;
+  font-weight: 600;
+  color: #5a3223;
+  font-family: cursive;
+
+`;
+
 
 //Client
 export const ClientsContainer = styled.View`

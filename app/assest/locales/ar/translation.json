@@ -8,5 +8,13 @@
     "enterYourEmail": "أدخل بريدك الإلكتروني",
     "enterYourPassword": "أدخل كلمة المرور الخاصة بك",
     "showPassword": "إظهار كلمة المرور",
-    "hidePassword": "إخفاء كلمة المرور"
+    "hidePassword": "إخفاء كلمة المرور",
+    "weeklySummary": "ملخص الأسبوع",
+    "totalClients": "عدد الزبائن",
+    "totalEarnings": "إجمالي الأرباح",
+    "currency": "شيكل",
+    "Today's birthdays": "أعياد الميلاد اليوم",
+    "noBirthdaysToday": "لا يوجد أعياد ميلاد اليوم",
+    "clientsNames": "الأسماء",
+    "Birthdays Today": "عيد ميلاد اليوم"
   }

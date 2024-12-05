@@ -1,6 +1,6 @@
 import React from 'react';
 import * as SC from './adminStyling';
-import Icon from 'react-native-vector-icons/Ionicons'; // Import Ionicons or any other icon set
+import Icon from 'react-native-vector-icons/Ionicons'; 
 
 const FirstSection = () => {
 
@@ -38,7 +38,6 @@ const FirstSection = () => {
 
   const handleArrowClick = () => {
     console.log('Arrow button clicked!');
-    // Add your navigation or scroll logic here
   };
 
   return (
