@@ -5,8 +5,11 @@ import SecondSection from './SecondSection';
 import Clients from './Clients';
 import Booking from './Booking';
 import TopBar from './TopBar';
+import { useTranslation } from 'react-i18next';
 
 const MainAdminPage = () => {
+  const { t } = useTranslation();
+
   return (
     <SC.SafeAreaViewS>
       <TopBar/>
@@ -16,8 +19,7 @@ const MainAdminPage = () => {
         <Clients/>
         <Booking/>
       </SC.SmallContainer>
-      <SC.Goods><SC.GoodsText>Goods</SC.GoodsText></SC.Goods>
-
+      <SC.Goods><SC.GoodsText>{t('goods')}</SC.GoodsText></SC.Goods>
     </SC.SafeAreaViewS>
   );
 };

@@ -1,8 +1,10 @@
 import React from 'react';
 import * as SC from './adminStyling';
 import Icon from 'react-native-vector-icons/Ionicons'; 
+import { useTranslation } from 'react-i18next';
 
 const FirstSection = () => {
+  const { t } = useTranslation();
 
   const appointments = [
     { name: 'Razan Zbedy', time: '18:00' },
@@ -40,7 +42,7 @@ const FirstSection = () => {
 
   return (
     <SC.FirstSectionContainer>
-      <SC.FirstSectionText>Schedule for Today</SC.FirstSectionText>
+      <SC.FirstSectionText>{t('scheduleForToday')}</SC.FirstSectionText>
       <SC.FirstSectionContainer1>
         {sortedAppointments.slice(0,3).map((appointment, index) => (
           <SC.MiniBoxContainer
