@@ -1,20 +1,16 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
 import * as SC from './adminStyling';
+import Icon from 'react-native-vector-icons/Ionicons'; 
 
 const Clients = () => {
   return (
     <SC.ClientsContainer>
-      <Text style={styles.title}>Clients</Text>
+      <Icon name="person" size={30} color="#935B16" />
+      <SC.ClientText>Clients</SC.ClientText>
     </SC.ClientsContainer>
   );
 };
 
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-});
+
 
 export default Clients;

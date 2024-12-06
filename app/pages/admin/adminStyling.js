@@ -3,47 +3,61 @@ import styled from 'styled-components/native';
 export const SafeAreaViewS = styled.SafeAreaView`
   flex: 1;
   align-items: center;
-  `;
+  background-color:white;
 
+
+
+
+`;
+
+export const FirstSectionText = styled.Text`
+    font-size:24px;
+    font-weight:bold;
+    color: #5a3223;
+    font-family: cursive;
+    margin-top:20px;
+`;
 
 export const SmallContainer = styled.View`
     height: 150px;
     width: 90%;
-    background-color: #F6C992;
     display:flex;
     flex-direction:row;
-    justify-content:center;
+    justify-content: space-around;
     align-items: center;
-    margin-top:10px;
-    gap:10px;
-
-
 `;
 
 //First Section
 export const FirstSectionContainer = styled.View`
-  height: 200px;
-  width: 90%;
-  background-color: #F6C992;
   align-items: center;
-  justify-content: center; 
-  margin-top: 10px;
+  justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-  flex-flow: row wrap; 
-  padding: 10px;
-  gap:5px;
-  overflow: hidden;
-  border-radius:15px;
+  flex-direction: column;
+  background-color: #FDF5E6; 
+  border-radius: 10px; 
+  padding: 5px;
+  margin: 10px 20px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  elevation: 3; 
+`;
 
+export const FirstSectionContainer1 = styled.View`
+  height: 80px;
+  width: 100%; 
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px; 
+  justify-content: space-between; 
+  padding: 0 10px; 
 `;
 
 export const ArrowButton = styled.TouchableOpacity`
   position: absolute;
-  bottom: 5px;
-  right: 5px;
-  height: 50px;
-  width: 50px;
+  bottom: -10px;
+  right: -10px;
+  height: 30px;
+  width: 30px;
   border-radius: 25px;
   background-color: #935B16;
   justify-content: center;
@@ -52,7 +66,7 @@ export const ArrowButton = styled.TouchableOpacity`
 `;
 
 export const MiniBoxContainer = styled.View`
-    height: 40px;
+    height: 50px;
     width: 100px;
     background-color: #E6A556;
     border-radius: 10px;
@@ -64,7 +78,7 @@ export const MiniBoxText = styled.Text`
     text-align:center;
     color:white;
     font-weight: bold;
-
+    font-size: 16px;
 
 
 `;
@@ -87,6 +101,7 @@ export const Container1 = styled.View`
     flex-direction: column;
     align-items: center;
     gap:5px;
+    
 
 `;
 
@@ -97,6 +112,7 @@ export const Title = styled.Text`
   color: #5a3223;
   font-family: cursive;
 
+
 `;
 
 
@@ -105,45 +121,115 @@ export const StatText = styled.Text`
   font-weight: 600;
   color: #5a3223;
   font-family: cursive;
+  
 
 `;
 
 
 //Client
 export const ClientsContainer = styled.View`
-    height: 150px;
+    height: 100px;
     width: 150px;
-
-    background-color: #CB8632;
+    background-color: #ECAE66;
     justify-content:center;
     align-items: center;
+    border-radius:10px;
+    shadow-color: #000;
+    shadow-opacity: 0.25;
+    shadow-radius: 3.84px;
+    elevation: 10;
+`;
+
+export const ClientText = styled.Text`
+  font-size: 24px;
+  font-weight: 600;
+  color: #5a3223;
+  font-family: cursive;
 
 `;
 
 //Booking
 export const BookingContainer = styled.View`
-    height: 150px;
-    background-color: #CB8632;
+    height: 100px;
+    width: 150px;
+    background-color: #ECAE66;
     justify-content:center;
     align-items: center;
-    width: 150px;
+    border-radius:10px;
+    shadow-color: #000;
+    shadow-opacity: 0.25;
+    shadow-radius: 3.84px;
+    elevation: 10;
+    
+
+`;
+
+export const BookingText = styled.Text`
+  font-size: 24px;
+  font-weight: 600;
+  color: #5a3223;
+  font-family: cursive;
+
+
 `;
 
 //Goods
 export const Goods = styled.View`
     height: 80px;
-    background-color: #CB8632;
+    background-color: #ECAE66;
     justify-content:center;
     align-items: center;
-    width: 90%;
-    margin-top:10px;
+    width: 85%;
+    border-radius:10px;
+    elevation: 10;
+
+
 `;
 
 export const GoodsText = styled.Text`
-    font-size:18px;
+    font-size:24px;
     font-weight:bold;
+    color: #5a3223;
+    font-family: cursive;
+
 `;
 
 
+//Top Bar
+
+export const TopBarContainer = styled.View`
+  width: 100%;
+  height: 60px;
+  background-color: #F5E8CF;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+`;
+
+export const LogoText = styled.Text`
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+`;
+
+export const ButtonSetting = styled.TouchableOpacity`
+  padding: 5px;
+`;
+
+export const ButtonExit = styled.TouchableOpacity`
+  padding: 5px;
+`;
+
+export const LogoContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const LogoImage = styled.Image`
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+`;
 
 

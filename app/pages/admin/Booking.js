@@ -1,20 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
 import * as SC from './adminStyling';
+import Icon from 'react-native-vector-icons/Ionicons'; 
 
 const Booking = () => {
   return (
     <SC.BookingContainer>
-      <Text style={styles.title}>Booking</Text>
+      <Icon name="today" size={30} color="#935B16" />
+      <SC.BookingText>Booking</SC.BookingText>
     </SC.BookingContainer>
   );
 };
 
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-});
 
 export default Booking;

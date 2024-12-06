@@ -4,10 +4,12 @@ import FirstSection from './FirstSection';
 import SecondSection from './SecondSection';
 import Clients from './Clients';
 import Booking from './Booking';
+import TopBar from './TopBar';
 
 const MainAdminPage = () => {
   return (
     <SC.SafeAreaViewS>
+      <TopBar/>
       <FirstSection/>
       <SecondSection/>
       <SC.SmallContainer>
