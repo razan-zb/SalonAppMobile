@@ -6,8 +6,6 @@ export const SafeAreaViewS = styled.SafeAreaView`
   background-color:white;
 
 
-
-
 `;
 
 export const FirstSectionText = styled.Text`
@@ -127,7 +125,7 @@ export const StatText = styled.Text`
 
 
 //Client
-export const ClientsContainer = styled.View`
+export const ClientsContainer = styled.TouchableOpacity`
     height: 100px;
     width: 150px;
     background-color: #ECAE66;
