@@ -29,15 +29,15 @@ const SecondSection = () => {
     <SC.SecondSectionContainer>
         <SC.Title>{t('weeklySummary')}</SC.Title>
         <SC.Container1>
-            <Icon name="woman" size={50} color="#935B16" />
+            <Icon name="woman" size={50} color="#BF9F00" />
            <SC.StatText>{t('totalClients')}: {totalClients}</SC.StatText>
         </SC.Container1>
         <SC.Container1>
-          <Icon name="balloon" size={50} color="#935B16" onPress={handleBirthdayPress} />
+          <Icon name="balloon" size={50} color="#BF9F00" onPress={handleBirthdayPress} />
           <SC.StatText>{t('Birthdays Today')}: {birthdaysToday.length}</SC.StatText>
         </SC.Container1>
         <SC.Container1>
-          <Icon name="cash-outline" size={50} color="#935B16"/>
+          <Icon name="cash-outline" size={50} color="#BF9F00"/>
           <SC.StatText>{t('totalEarnings')}: {totalEarnings} {t('currency')}</SC.StatText>
         </SC.Container1>
     </SC.SecondSectionContainer>

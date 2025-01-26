@@ -3,15 +3,15 @@ import styled from 'styled-components/native';
 export const SafeAreaViewS = styled.SafeAreaView`
   flex: 1;
   align-items: center;
-  background-color:white;
+  background-color:#fff;
 
 
 `;
 
 export const FirstSectionText = styled.Text`
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
-    color: #5a3223;
+    color: #1D1D1B;
     font-family: cursive;
     margin-top:20px;
 `;
@@ -31,7 +31,7 @@ export const FirstSectionContainer = styled.View`
   justify-content: center;
   display: flex;
   flex-direction: column;
-  background-color: #FDF5E6; 
+  border:#1D1D1B;
   border-radius: 10px; 
   padding: 5px;
   margin: 10px 20px; 
@@ -57,7 +57,7 @@ export const ArrowButton = styled.TouchableOpacity`
   height: 30px;
   width: 30px;
   border-radius: 25px;
-  background-color: #935B16;
+  background-color: #C4A50B;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -88,9 +88,6 @@ export const SecondSectionContainer = styled.View`
     justify-content:center;
     align-items: center;
     margin-top:10px;
-
-
-
 `;
 
 export const Container1 = styled.View`
@@ -107,7 +104,7 @@ export const Title = styled.Text`
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #5a3223;
+  color: #1D1D1B;
   font-family: cursive;
 
 
@@ -117,7 +114,7 @@ export const Title = styled.Text`
 export const StatText = styled.Text`
   font-size: 20px;
   font-weight: 600;
-  color: #5a3223;
+  color: #1D1D1B;
   font-family: cursive;
   
 
@@ -128,7 +125,7 @@ export const StatText = styled.Text`
 export const ClientsContainer = styled.TouchableOpacity`
     height: 100px;
     width: 150px;
-    background-color: #ECAE66;
+    background-color: #1D1D1B;
     justify-content:center;
     align-items: center;
     border-radius:10px;
@@ -141,7 +138,7 @@ export const ClientsContainer = styled.TouchableOpacity`
 export const ClientText = styled.Text`
   font-size: 24px;
   font-weight: 600;
-  color: #5a3223;
+  color: #BF9F00;
   font-family: cursive;
 
 `;
@@ -150,7 +147,7 @@ export const ClientText = styled.Text`
 export const BookingContainer = styled.View`
     height: 100px;
     width: 150px;
-    background-color: #ECAE66;
+    background-color: #1D1D1B;
     justify-content:center;
     align-items: center;
     border-radius:10px;
@@ -165,7 +162,7 @@ export const BookingContainer = styled.View`
 export const BookingText = styled.Text`
   font-size: 24px;
   font-weight: 600;
-  color: #5a3223;
+  color: #BF9F00;
   font-family: cursive;
 
 
@@ -174,20 +171,18 @@ export const BookingText = styled.Text`
 //Goods
 export const Goods = styled.View`
     height: 80px;
-    background-color: #ECAE66;
+    background-color: #1D1D1B;
     justify-content:center;
     align-items: center;
     width: 85%;
     border-radius:10px;
     elevation: 10;
-
-
 `;
 
 export const GoodsText = styled.Text`
-    font-size:24px;
-    font-weight:bold;
-    color: #5a3223;
+    font-size: 24px;
+    font-weight: 600;
+    color: #BF9F00;
     font-family: cursive;
 
 `;
@@ -198,7 +193,7 @@ export const GoodsText = styled.Text`
 export const TopBarContainer = styled.View`
   width: 100%;
   height: 60px;
-  background-color: #F5E8CF;
+  background-color: #1D1D1B;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -222,6 +217,7 @@ export const ButtonExit = styled.TouchableOpacity`
 export const LogoContainer = styled.View`
   flex-direction: row;
   align-items: center;
+  margin-top:10px;
 `;
 
 export const LogoImage = styled.Image`

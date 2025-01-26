@@ -33,7 +33,7 @@ const FirstSection = () => {
 
   const generateShade = (index, total) => {
     const lightenFactor = (total - index) / total;
-    return `rgba(203, 134, 50, ${lightenFactor})`;
+    return `rgba(191, 159, 50, ${lightenFactor})`;
   };
 
   const handleArrowClick = () => {
@@ -54,7 +54,7 @@ const FirstSection = () => {
           </SC.MiniBoxContainer>
         ))}
         <SC.ArrowButton onPress={handleArrowClick}>
-          <Icon name="arrow-forward" size={20} color="#fff" />
+          <Icon name="arrow-down" size={20} color="#fff" />
         </SC.ArrowButton>
       </SC.FirstSectionContainer1>
     </SC.FirstSectionContainer>

@@ -44,7 +44,7 @@ const LoginScreen = ({ navigation }) => {
     <SC.LoginContainer>
       <SC.BackArrow
         onPress={handleBackPress}>
-        <Icon name="arrow-back" size={30} color="#6C400A" />
+        <Icon name="arrow-back" size={30} color="#97883A" />
       </SC.BackArrow>
 
       <SC.LogInTitle>{t('welcome')}</SC.LogInTitle>

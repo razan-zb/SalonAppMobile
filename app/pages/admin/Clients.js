@@ -14,7 +14,7 @@ const Clients = () => {
 
   return (
     <SC.ClientsContainer onPress={handlePress}>
-      <Icon name="person" size={30} color="#935B16" />
+      <Icon name="person" size={30} color="#BF9F00" />
       <SC.ClientText>{t('clients')}</SC.ClientText>
     </SC.ClientsContainer>
   );

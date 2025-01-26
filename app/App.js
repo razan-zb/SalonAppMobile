@@ -6,7 +6,7 @@ import LoginScreen from './pages/welcomeLS/LoginScreen';
 import SignUpScreen from './pages/welcomeLS/SignUpScreen';
 import MainAdminPage from './pages/admin/MainAdminPage';
 import ClientsList from './pages/behindMainAdminPage/ClientsList';
-
+import OneClient from './pages/behindMainAdminPage/OneClient'
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -53,7 +53,7 @@ function App() {
           <Stack.Screen name="SignUp" component={SignUpScreen} />
           <Stack.Screen name="AdminMainPage" component={MainAdminPage} />
           <Stack.Screen name="ClientsList" component={ClientsList} />
-
+          <Stack.Screen name="OneClient" component={OneClient} />
         </Stack.Navigator>
       </NavigationContainer>
     </I18nextProvider>

@@ -17,10 +17,10 @@ export const WelcomeFrame = styled(ImageBackground).attrs({
 
 
 export const Button = styled.TouchableOpacity`
-background-color: #CB8632; 
+background-color: #CAB572; 
 padding: 12px 24px;
 border-radius: 8px;
-margin-top: 150px;
+margin-top: 100px;
 width: 40%; 
 align-items: center;
 
@@ -34,7 +34,7 @@ export const ButtonText = styled.Text`
         
         `;
 export const SecondaryText = styled.Text`
-    color: #CB8632; 
+    color: #CAB572; 
     font-size: 18px;
     margin-top: 1px;
 
@@ -45,13 +45,13 @@ export const LoginContainer = styled.View`
     flex:1;
     justify-content: center; 
     align-items: center; 
-    background-color:#E6A556;
+    background-color:#fff;
     width:100%;
     higth:100%
 `;
 
 export const InnerContainer = styled.View`
-    background-color:#F6C992;
+    background-color:#F9F0C3;
     width:350px;
     height:300px;
     padding:10px;
@@ -59,7 +59,7 @@ export const InnerContainer = styled.View`
     justify-content: center;
     border-radius: 10px;
     border:1px;
-    border: 2px solid #6C400A;
+    border: 2px solid #AF9202;
 
 
 
@@ -68,7 +68,7 @@ export const InnerContainer = styled.View`
 export const LogInTitle = styled.Text`
     font-size:24px;
     font-weight: bold;
-    color:#6C400A;
+    color:#AF9202;
 
 
 `;
@@ -76,14 +76,14 @@ export const LogInTitle = styled.Text`
 export const LogInLabels = styled.Text`
     font-size:20px;
     font-weight: bold;
-    color:#6C400A;
+    color:#AF9202;
 
 `;
 
 export const ShownPassword = styled.Text`
     font-size:16px;
     font-weight: bold;
-    color:#6C400A;
+    color:#AF9202;
     font-family: cursive;
 
 `;
@@ -91,7 +91,7 @@ export const ShownPassword = styled.Text`
 
 export const InputBox = styled.TextInput`
     font-size:16px;
-    color:#6C400A;
+    color:#AF9202;
     border: 0; 
 
 `;
@@ -100,14 +100,14 @@ export const Checkbox = styled.View`
   width: 20px;
   height: 20px;
   border-width: 1px;
-  border-color: #6c400a;
+  border-color: #97883A;
   margin-right: 10px;
   border-radius: 3px;
-  background-color: ${(props) => (props.checked ? '#6C400A' : 'white')};
+  background-color: ${(props) => (props.checked ? '#AF9202' : 'white')};
 `;
 
 export const LoginButton = styled.TouchableOpacity`
-  background-color: #6C400A;
+  background-color: #97883A;
   padding: 15px 20px;
   border-radius: 5px;
   align-items: center;

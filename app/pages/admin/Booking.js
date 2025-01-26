@@ -8,7 +8,7 @@ const Booking = () => {
 
   return (
     <SC.BookingContainer>
-      <Icon name="today" size={30} color="#935B16" />
+      <Icon name="today" size={30} color="#BF9F00" />
       <SC.BookingText>{t('booking')}</SC.BookingText>
     </SC.BookingContainer>
   );

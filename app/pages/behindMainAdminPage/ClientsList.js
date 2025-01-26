@@ -24,10 +24,11 @@ const ClientsList = ({ navigation }) => {
   const filteredClients = clients.filter((client) =>
     client.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
   const handleAddClient = () => {
-    console.log('Add new client');
+    navigation.navigate('OneClient');
   };
+
+
 
   const handleBack = () => {
     navigation.goBack();
@@ -35,15 +36,15 @@ const ClientsList = ({ navigation }) => {
 
   return (
     <SC.ClientsListContainer>
-      <TouchableOpacity onPress={handleBack} style={{ marginLeft: 10, marginTop: 10 }}>
-        <Icon name="arrow-back" size={30} color="#935B16" />
+      <TouchableOpacity onPress={handleBack} style={{ marginTop: 10 ,alignSelf:"flex-end" }}>
+        <Icon name="arrow-back" size={30} color="#BF9F00" />
       </TouchableOpacity>
 
       <SC.SearchBarContainer>
-        <Icon name="search" size={20} color="#CB8632" />
+        <Icon name="search" size={20} color="#1D1D1B" />
         <SC.SearchInput
           placeholder={t('Search for a client')}
-          placeholderTextColor="#CB8632"
+          placeholderTextColor="#1D1D1B"
           value={searchQuery}
           onChangeText={handleSearch}
         />
@@ -53,8 +54,8 @@ const ClientsList = ({ navigation }) => {
         data={filteredClients}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
-          <SC.ClientNameContainer>
-            <SC.ClientName>{item}</SC.ClientName>
+          <SC.ClientNameContainer  >
+            <SC.ClientName onPress={handleAddClient}>{item}</SC.ClientName>
           </SC.ClientNameContainer>
         )}
         contentContainerStyle={{ padding: 10 }}
@@ -62,7 +63,7 @@ const ClientsList = ({ navigation }) => {
 
       {/* Plus Button */}
       <SC.PlusButton onPress={handleAddClient}>
-        <Icon name="add" size={30} color="#FFF" />
+        <Icon name="add" size={30} color="#1D1D1B" />
       </SC.PlusButton>
     </SC.ClientsListContainer>
   );

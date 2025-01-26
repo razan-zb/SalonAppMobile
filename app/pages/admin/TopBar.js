@@ -8,7 +8,7 @@ const TopBar = ({ onExit, onSettings }) => {
   return (
     <SC.TopBarContainer>
       <SC.ButtonExit onPress={onExit}>
-        <Icon name="exit-outline" size={24} color="#935B16" />
+        <Icon name="exit-outline" size={24} color="#AF9202" />
       </SC.ButtonExit>
 
       <SC.LogoContainer>
@@ -17,7 +17,7 @@ const TopBar = ({ onExit, onSettings }) => {
 
 
       <SC.ButtonSetting onPress={onSettings}>
-        <Icon name="settings-outline" size={24} color="#935B16" />
+        <Icon name="settings-outline" size={24} color="#AF9202" />
       </SC.ButtonSetting>
     </SC.TopBarContainer>
   );
