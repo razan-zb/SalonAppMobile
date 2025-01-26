@@ -10,7 +10,7 @@ import OneClient from './pages/behindMainAdminPage/OneClient'
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import BookingForOne from './pages/behindMainAdminPage/BookingForOne';
 const Stack = createStackNavigator();
 
 function App() {
@@ -54,6 +54,9 @@ function App() {
           <Stack.Screen name="AdminMainPage" component={MainAdminPage} />
           <Stack.Screen name="ClientsList" component={ClientsList} />
           <Stack.Screen name="OneClient" component={OneClient} />
+          <Stack.Screen name="BookingForOne" component={BookingForOne} />
+
+
         </Stack.Navigator>
       </NavigationContainer>
     </I18nextProvider>

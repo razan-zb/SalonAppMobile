@@ -40,5 +40,11 @@
     "Registration Date": "تاريخ إضافة الزبون",
     "Save": "حفظ",
      "Cancel": "إلغاء",
-     "Update":"تعديل"
+     "Update":"تعديل",
+     "Booking Details": "تفاصيل الحجز",
+    "Client Name": "اسم العميل",
+    "Service": "الخدمة",
+    "Date": "التاريخ",
+    "Time": "الوقت",
+    "Stylist": "المصفف"
   }

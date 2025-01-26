@@ -39,5 +39,11 @@
     "AddNotes" :"הערות",
     "Save": "שמור",
     "Cancel": "בטל",
-    "Update":"עדכון"
+    "Update":"עדכון",
+    "Booking Details": "פרטי הזמנה",
+    "Client Name": "שם הלקוח",
+    "Service": "שירות",
+    "Date": "תאריך",
+    "Time": "שעה",
+    "Stylist": "מעצב שיער"
   }

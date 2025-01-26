@@ -144,7 +144,7 @@ export const ClientText = styled.Text`
 `;
 
 //Booking
-export const BookingContainer = styled.View`
+export const BookingContainer = styled.TouchableOpacity`
     height: 100px;
     width: 150px;
     background-color: #1D1D1B;

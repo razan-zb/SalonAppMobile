@@ -180,3 +180,35 @@ export const ButtonText = styled.Text`
   font-weight: bold;
   text-align: center;
 `;
+
+export const Container = styled.View`
+  flex: 1;
+  padding: 20px;
+  background-color: #fdfcf4;
+`;
+
+
+
+export const Title2 = styled.Text`
+  font-size: 24px;
+  color: #BF9F00;
+  font-weight: bold;
+  margin-bottom: 20px;
+`;
+
+export const DetailContainer = styled.View`
+  margin-top: 10px;
+`;
+
+export const Label2 = styled.Text`
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+`;
+
+export const Value2 = styled.Text`
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+`;

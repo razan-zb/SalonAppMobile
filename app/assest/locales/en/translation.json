@@ -40,5 +40,11 @@
     "Registration Date": "Registration Date",
     "Save": "Save",
    "Cancel": "Cancel",
-    "Update":"Update"
+    "Update":"Update",
+    "Booking Details": "Booking Details",
+    "Client Name": "Client Name",
+    "Service": "Service",
+    "Date": "Date",
+    "Time": "Time",
+    "Stylist": "Stylist"
   }
