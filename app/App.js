@@ -11,6 +11,11 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import BookingForOne from './pages/behindMainAdminPage/BookingForOne';
+import BookingCalendar from './pages/behindMainAdminPage/BookingCalendar';
+import FirstSectionList from './pages/behindMainAdminPage/FirstSectionList';
+import FirstSectionOneBox from './pages/behindMainAdminPage/FirstSectionOneBox';
+import GoodsAndSuppliers from './pages/behindMainAdminPage/GoodsAndSuppliers';
+
 const Stack = createStackNavigator();
 
 function App() {
@@ -55,8 +60,12 @@ function App() {
           <Stack.Screen name="ClientsList" component={ClientsList} />
           <Stack.Screen name="OneClient" component={OneClient} />
           <Stack.Screen name="BookingForOne" component={BookingForOne} />
+          <Stack.Screen name="BookingCalendar" component={BookingCalendar} />
+          <Stack.Screen name="FirstSectionList" component={FirstSectionList} />
+          <Stack.Screen name="FirstSectionOneBox" component={FirstSectionOneBox} />
+          <Stack.Screen name="GoodsAndSuppliers" component={GoodsAndSuppliers} />
 
-
+          
         </Stack.Navigator>
       </NavigationContainer>
     </I18nextProvider>

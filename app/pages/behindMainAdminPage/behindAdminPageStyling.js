@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { Picker } from '@react-native-picker/picker';
 
 // Main Container
 export const ClientsListContainer = styled.View`
@@ -76,11 +77,9 @@ export const BackButton = styled.TouchableOpacity`
   border: none;
   cursor: pointer;
   margin-bottom: 20px;
-  width:100px;
+  width:auto;
   align-self:flex-end;
-
-
-  `;
+ `;
 
 // Titles
 export const Title = styled.Text`
@@ -199,6 +198,10 @@ export const Title2 = styled.Text`
 export const DetailContainer = styled.View`
   margin-top: 10px;
 `;
+export const DetailContainer2 = styled.View`
+  margin-top: 10px;
+  gap:5px;
+`;
 
 export const Label2 = styled.Text`
   font-size: 16px;
@@ -207,8 +210,148 @@ export const Label2 = styled.Text`
   margin-bottom: 5px;
 `;
 
-export const Value2 = styled.Text`
+export const Value2 = styled.TextInput`
   font-size: 16px;
   color: #555;
   margin-bottom: 15px;
+  background-color:#fff;
+  border: 1px ;
+
+`;
+
+export const Container3 = styled.View`
+  flex: 1;
+  background-color: #fdfcf4;
+  padding: 20px;
+`;
+
+
+
+export const Title3 = styled.Text`
+  font-size: 24px;
+  color: #bf9f00;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+`;
+
+export const CalendarContainer = styled.View`
+  margin-bottom: 20px;
+`;
+
+export const SelectedDate = styled.Text`
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+`;
+
+export const SectionTitle3 = styled.Text`
+  font-size: 20px;
+  color: #bf9f00;
+  font-weight: bold;
+  margin-bottom: 10px;
+`;
+
+export const TimeSlot = styled.TouchableOpacity`
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+`;
+
+export const TimeSlotText = styled.Text`
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+`;
+
+
+export const Card = styled.TouchableOpacity`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+`;
+
+export const CardContent = styled.View`
+  flex-direction: column;
+`;
+
+export const ClientName3 = styled.Text`
+  font-size: 18px;
+  font-weight: bold;
+  color: #1d1d1b;
+`;
+
+export const DateTime = styled.Text`
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+`;
+
+export const IconContainer = styled.View`
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TextArea = styled.TextInput`
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align-vertical: top;
+`;
+
+export const TextArea2 = styled.TextInput`
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align-vertical: top;
+  height:100px;
+`;
+
+export const SaveButton = styled.TouchableOpacity`
+  background-color: #bf9f00;
+  padding: 15px;
+  border-radius: 8px;
+  align-items: center;
+`;
+export const SelectContainer = styled.View`
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 200px;
+
+`;
+
+// Directly style the Picker component
+export const StyledPicker = styled(Picker)`
+  color: #333; /* Text color */
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+`;
+
+export const Button4 = styled.TouchableOpacity`
+  background-color: #BF9F00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top:10px;
 `;

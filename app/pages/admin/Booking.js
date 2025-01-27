@@ -8,7 +8,7 @@ const Booking = () => {
   const navigation = useNavigation();
   const { t } = useTranslation();
   const handlePress = () => {
-    navigation.navigate('BookingForOne');
+    navigation.navigate('BookingCalendar');
   };
   return (
     <SC.BookingContainer  onPress={handlePress} >

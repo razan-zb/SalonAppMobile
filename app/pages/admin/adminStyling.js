@@ -63,7 +63,7 @@ export const ArrowButton = styled.TouchableOpacity`
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
-export const MiniBoxContainer = styled.View`
+export const MiniBoxContainer = styled.TouchableOpacity`
     height: 50px;
     width: 100px;
     background-color: #E6A556;
@@ -169,7 +169,7 @@ export const BookingText = styled.Text`
 `;
 
 //Goods
-export const Goods = styled.View`
+export const Goods = styled.TouchableOpacity`
     height: 80px;
     background-color: #1D1D1B;
     justify-content:center;

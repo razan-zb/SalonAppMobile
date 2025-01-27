@@ -122,8 +122,9 @@ export const LoginButtonText = styled.Text`
 
 export const BackArrow = styled.TouchableOpacity`
   position:absolute;
-  align-self:right;
-  top:20px;  
+  align-self:flex-end;
+  top:20px; 
+
 `;
 
 

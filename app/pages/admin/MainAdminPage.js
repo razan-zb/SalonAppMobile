@@ -33,6 +33,9 @@ const MainAdminPage = ({navigation}) => {
   const handleSettings = () => {
     navigation.navigate('Settings'); // Redirect to the Settings page
   };
+  const handelOpenPage = () => {
+    navigation.navigate('GoodsAndSuppliers');
+  };
 
   return (
     <SC.SafeAreaViewS>
@@ -43,7 +46,7 @@ const MainAdminPage = ({navigation}) => {
         <Clients/>
         <Booking/>
       </SC.SmallContainer>
-      <SC.Goods><SC.GoodsText>{t('goods')}</SC.GoodsText></SC.Goods>
+      <SC.Goods onPress={handelOpenPage}><SC.GoodsText>{t('goods')}</SC.GoodsText></SC.Goods>
     </SC.SafeAreaViewS>
   );
 };

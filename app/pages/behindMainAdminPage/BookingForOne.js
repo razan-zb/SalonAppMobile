@@ -2,10 +2,11 @@ import React from 'react';
 import * as SC from './behindAdminPageStyling'; // Replace with your styled-components file
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useTranslation } from 'react-i18next';
+import { Alert } from 'react-native';
 
 const BookingForOne = ({ navigation, route }) => {
   const { t } = useTranslation();
-  
+  const { date, time } = route.params;
   // Example booking data (temporary)
   const bookingDetails = {
     date: '2025-01-26',
@@ -18,6 +19,10 @@ const BookingForOne = ({ navigation, route }) => {
   // Handle Back Navigation
   const handleBack = () => {
     navigation.goBack();
+  };
+
+  const handleSave= () => {
+    Alert.alert( t('Saved!'));
   };
 
   return (
@@ -39,13 +44,17 @@ const BookingForOne = ({ navigation, route }) => {
         <SC.Value2>{bookingDetails.service}</SC.Value2>
 
         <SC.Label2>{t('Date')}</SC.Label2>
-        <SC.Value2>{bookingDetails.date}</SC.Value2>
+        <SC.Value2>{date}</SC.Value2>
 
         <SC.Label2>{t('Time')}</SC.Label2>
-        <SC.Value2>{bookingDetails.time}</SC.Value2>
+        <SC.Value2>{time}</SC.Value2>
 
-        <SC.Label2>{t('Stylist')}</SC.Label2>
-        <SC.Value2>{bookingDetails.stylist}</SC.Value2>
+        <SC.ButtonContainer>
+          <SC.Button onPress={handleSave}>
+            <SC.ButtonText>Save</SC.ButtonText>
+          </SC.Button>
+        </SC.ButtonContainer>
+
       </SC.DetailContainer>
     </SC.Container>
   );
